@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Table</title>
+    <!-- we are using Internal CSS by accesing style -->
+    <style>
+       
+        table,td,th{
+            border: 2px solid blue;
+            border-collapse: collapse; 
+        }
+        thead{
+            background-color: cadetblue;
+        }
+        tbody{
+            background-color: aqua;
+        }
+        tfoot{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Mark Sheet</h1>
+    <hr>
+    <hr>
+    <!-- table>tr*num used to creat nums of row inside the table-->
+    <!--tr tag is used to creat row and td tag to add data inside the table-->
+    
+    <table>
+        <thead>
+            <tr>
+                <!-- td*num is used to add nums of data diretly by the help of emmet-->
+                <th>Name</th>
+                <th>Marks</th>
+                <!--th is the tag to add header in the table-->
+            </tr> 
+        </thead>
+        <tbody>
+        <tr>
+            <td>Subrata</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>Shubham</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Abhishek</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td>Sourav</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>sam</td>
+            <td>79</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>850</td>
+            
+        </tr>
+        </tfoot>
+    </table>
+    <br>
+       
+    <table>
+        
+        <thead>
+        <tr>
+            <td colspan="2">2022</td>
+        </tr>
+    </thead>
+        <tr>
+            <td>Name</td>
+            <td>Jill</td>
+        </tr>
+        
+        <tr>
+            <td rowspan="2">Phone</td>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            
+            <td>555-6789</td>
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+            <td columnspan="2">Name</td>
+            <td>Age</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Smith</td>
+            <td>joe</td>
+            <td>25</td>
+            
+        </tr>
+        <tr>
+            <td ></td>
+            <td colspan="2"></td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            
+        </tr>
+    
+        </tbody>
+    </table>
+
+</body>
+</html>
